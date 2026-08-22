@@ -1,0 +1,105 @@
+.bagel-fat-one-regular {
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p {
+    color: #ffffff;
+    font-size: 22.5px;
+    text-wrap: unset;
+}
+
+h2 {
+    color: white;
+    font-family: "Josefin Sans", system-ui;
+    letter-spacing: 1px;
+    font-style: italic;
+    font-size: 35px;
+
+}
+
+h1 {
+    color: white;
+    font-family: "Bagel Fat One", system-ui;
+    letter-spacing: 1px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    background-color:rgb(98, 0, 255);
+    border-radius: 50px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: rgb(73, 0, 190);
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.box {
+    background-color: rgb(98, 0, 255);
+    border-radius: 50px;
+    width: fit-content;
+    padding: 40px;
+    margin: auto;
+    overflow: auto;
+    border-width: 15px;
+    border-color: rgb(73, 0, 190);
+    border-style: solid;
+}
+
+.wolf {
+    width: 160px;
+    height: auto;
+    float: right;
+    margin-left: 15px;
+    border-radius: 50px;
+    border-width: 12.5px;
+    border-style: solid;
+    border-color:rgb(73, 0, 190);
+}
+
+.navbar {
+    display: flex;
+    gap: 150px;
+    background-color: rgb(98, 0, 255);
+    border-radius: 50px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: rgb(73, 0, 190);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-bottom: 35px;
+    font-family: "Bagel Fat One";
+}
+
+a {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    color: white;
+}
