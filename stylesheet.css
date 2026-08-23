@@ -23,6 +23,7 @@ h2 {
     letter-spacing: 1px;
     font-style: italic;
     font-size: 35px;
+    text-shadow: 4px 1px 4px #070707;
 
 }
 
@@ -36,17 +37,29 @@ h1 {
     font-size: 50px;
     background-color:rgb(98, 0, 255);
     border-radius: 50px;
-    width: fit-content;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
-    padding-left: 50px;
+    padding-left: 40px;
     padding-right: 50px;
     padding-top: 15px;
     padding-bottom: 20px;
     border-style: solid;
     border-width: 15px;
     border-color: rgb(73, 0, 190);
+    text-shadow: 8px 4px 8px #070707;
+
+}
+
+html {
+    scrollbar-width: none;       /* Firefox */
+    -ms-overflow-style: none;    /* old Edge / IE */
+    overflow-y: scroll;
+}
+
+html::-webkit-scrollbar {
+    display: none;               /* Chrome, Safari, new Edge */
 }
 
 body {
@@ -55,18 +68,28 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-y: scroll;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
 .box {
     background-color: rgb(98, 0, 255);
     border-radius: 50px;
-    width: fit-content;
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
     padding: 40px;
     margin: auto;
     overflow: auto;
     border-width: 15px;
     border-color: rgb(73, 0, 190);
     border-style: solid;
+    overflow: hidden;
+    margin-bottom: -60px;
 }
 
 .wolf {
@@ -78,6 +101,28 @@ body {
     border-width: 12.5px;
     border-style: solid;
     border-color:rgb(73, 0, 190);
+
+}
+
+img {
+    border-radius: 25px;
+    border-width: 12.5px;
+    border-style: solid;
+    border-color:rgb(73, 0, 190);   
+}
+
+.maryOS {
+
+    width: 500px;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.animation {
+    animation: fadeIn 1200ms ease-in-out;
+
 }
 
 .navbar {
@@ -95,11 +140,145 @@ body {
     padding-left: 100px;
     margin-bottom: 35px;
     font-family: "Bagel Fat One";
+
+}
+.navbar a {
+    padding: 16px 32px;
+    border-radius: 30px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar a:hover {
+    background-color: transparent;
+    color: #fa5cd2;
+    text-decoration-color: #fa5cd2;
+}
+
+a:hover {
+    background-color: transparent;
+    color: #fa5cd2;
+    text-decoration-color: #fa5cd2;    
+    text-shadow: 4px 1px 4px #4b0539;
+
 }
 
 a {
+    transition: background-color 0.2s ease, color 0.2s ease;
     font-size: 30px;
     padding-top: 10px;
     padding-bottom: 15px;
     color: white;
+    font-family: "Bagel Fat One";
+    text-shadow: 4px 1px 4px rgb(0, 0, 0);
+
 }
+
+.game {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.secondRow {
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+
+}
+
+.secondRow a {
+    transition: text-shadow 0.2s ease, color 0.2s ease;
+}
+.astroFetch {
+    width: 500px;
+    height: auto;
+    display:flex;
+}
+
+/*
+Source - https://stackoverflow.com/a/54277292
+Posted by Nadeem Qasmi
+Retrieved 2026-08-22, License - CC BY-SA 4.0
+*/
+
+.line {
+    width: calc(100% + 80px); /* 100% of available space + 40px padding on each side */
+    height: 0;
+    border: 5px solid rgb(73, 0, 190);
+    margin-left: -40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%
+  }
+}
+
+.site-footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 30px 20px;
+    color: white;
+}
+
+.site-footer p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 12px 0;
+}
+
+
+.footer-links a {
+    font-size: 18px;
+    color: white;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #fa5cd2;
+    text-decoration-color: #fa5cd2;
+}
+
+.footer-small {
+    font-size: 13px;
+    opacity: .9;
+}
+
+@media (max-width: 1100px) {
+    .secondRow {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .secondRow > div {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .maryOS,
+    .astroFetch {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .game {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
