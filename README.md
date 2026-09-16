@@ -9,7 +9,13 @@ A personal website that contains stuff about me and what I've made.
 Two pages
 
 - About me: Brief introduction to who I am :)
+
 - Projects: Four projects that I've made that I think are cool, featuring two games and two websites.
+
+    - Note Mash: a simple rhythm game.
+    - Tempo Surge: a warioware like game.
+    - maryOS!: a operating system based off of me.
+    - astroFETCH: a website that grabs the APOD from NASA's website.
 
 You can access it at: https://awesomesauce4646.github.io/introductory-website/
 
