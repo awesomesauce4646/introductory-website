@@ -11,6 +11,8 @@ Two pages
 - About me: Brief introduction to who I am :)
 - Projects: Four projects that I've made that I think are cool, featuring two games and two websites.
 
+You can access it at: https://awesomesauce4646.github.io/introductory-website/
+
 ## Why was this created?
 
 I made this website for the Pixl Hack Club program!
